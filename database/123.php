@@ -12,13 +12,13 @@ if ($conn->connect_error) {
 } 
 
 // sql to create table
-$sql = "CREATE TABLE users(
-  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  first_name VARCHAR(15) NOT NULL,
-  last_name VARCHAR(15) NOT NULL,
-  Email VARCHAR(20) NOT NULL,
-  gender VARCHAR(6) NOT NULL,
-  Password VARCHAR(20) NOT NULL,
+$sql = "CREATE TABLE expense
+(
+  expense_id INT NOT NULL AUTO_INCREMENT,
+  amount INT NOT NULL,
+  category VARCHAR(20) NOT NULL,
+  expense_name VARCHAR(20) NOT NULL,
+  PRIMARY KEY (expense_id),
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 

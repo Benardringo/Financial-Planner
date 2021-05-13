@@ -8,7 +8,8 @@ body{
 header{
   z-index: 1;
   position: fixed;
-  background:#000;
+  background-image: url("0.jpg");
+  opacity: 10.5;
   padding: 20px;
   width: calc(100% - 0%);
   top: 0;
@@ -49,7 +50,7 @@ header{
 .sidebar{
   z-index: 1;
   top: 0;
-  background: #3385FF;
+  background: #073d80;
   margin-top: 70px;
   padding-top: 30px;
   position: fixed;
@@ -94,7 +95,7 @@ header{
 }
 
 .sidebar a:hover{
-  background: #19B3D3;
+  background: #023069;;
 }
 
 .sidebar i{

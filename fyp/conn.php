@@ -17,9 +17,9 @@ if ($con->connect_error) {
      # code...
     echo "Problem in database connection! Contact administrator!" . mysqli_error();
  }
-
+*/
 else{
-         $sql ="SELECT * FROM tblsales";
+         $sql =" select expense_name as Product ,count(expense_name) as TotalSales from expense group by expense_name;";
          $result = mysqli_query($con,$sql);
          $chart_data="";
          while ($row = mysqli_fetch_array($result)) { 
@@ -30,10 +30,4 @@ else{
  
  
  }
- 
- */
-else{
-  
-  echo ("see you");
-}
 ?>
