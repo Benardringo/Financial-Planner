@@ -16,7 +16,7 @@
                                       <canvas  id="chartjs_bar"></canvas> 
                                   </div> 
         <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script> 
+  <script src="js/chat.js"></script> 
   <script type="text/javascript">
       var ctx = document.getElementById("chartjs_bar").getContext('2d');
                 var myChart = new Chart(ctx, {

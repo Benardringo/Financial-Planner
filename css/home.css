@@ -259,10 +259,9 @@ body{
   margin-bottom: 20px;
 }
 
-.skills .content .col-right img{
+.skills .content .col-right{
   position: relative;
   width: 46%;
-
 }
 
 .skills .content .col-right .bar{
@@ -323,6 +322,7 @@ body{
   width: 75%;
   background: #6d7eb8;
 }
+
 
 .services .content{
   display: flex;
