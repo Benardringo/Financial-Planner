@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "mifis";
+$servername = "sqlXXX.epizy.com";
+$username = "epiz_28659440";
+$password = "1LKuHTBR0OQ";
+$dbname = "epiz_28659440_XXX";
 
 // Create connection
 $con = new mysqli($servername, $username, $password, $dbname);
@@ -12,7 +12,12 @@ if ($con->connect_error) {
   die("Connection failed: " . $con->connect_error);
 } 
 
-/*$con  = mysqli_connect("localhost","root","","salesdb");
+/*
+$servername = "sqlXXX.epizy.com";
+$username = "epiz_28659440";
+$password = "1LKuHTBR0OQ";
+$dbname = "epiz_28659440_XXX";
+$con  = mysqli_connect("localhost","root","","salesdb");
  if (!$con) {
      # code...
     echo "Problem in database connection! Contact administrator!" . mysqli_error();

@@ -1,5 +1,10 @@
 
 <?php 
+session_start();
+if(empty($_SESSION['id'])):
+header('Location: signin.html');
+endif;
+
   include("fyp/hearder.php");
   include("fyp/conn.php");
  ?>

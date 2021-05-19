@@ -21,7 +21,7 @@ $query=mysqli_query($con,"select * from users where Email='$user' and Password='
 	  	if ($counter == 0) 
 		  {	
 		  echo "<script type='text/javascript'>alert('Invalid email or Password!');
-		  document.location='login.html'</script>";
+		  document.location='signin.html'</script>";
 		  } 
 	  else
 		  {
