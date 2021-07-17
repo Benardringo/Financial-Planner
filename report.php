@@ -28,9 +28,7 @@ include("fyp/hearder.php");?>
      <div class =" photo1">
           <img src="3.jpg" alt="Girl in a jacket" style="width:130px;height:150px;">
      </div>
-     <div class =" photo2">
-		    <img src="2.png" alt="Girl in a jacket" style="width:130px;height:150px;">
-     </div>
+   
      <div class ="button1">
          <button type="button" onclick="alert('done')"><p> Generate</p></button>
      </div>

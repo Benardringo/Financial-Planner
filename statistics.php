@@ -17,7 +17,7 @@ endif;
   
                                  <div class = "row">
                                  <div style="width:70%;height:900px;text-align:center">
-                                      <h2 class="page-header" >EXPENCES </h2>
+                                      <h2 class="page-header" >EXPENSES </h2>
                                       <canvas  id="chartjs_bar"></canvas> 
                                   </div> 
         <script src="//code.jquery.com/jquery-1.9.1.js"></script>
@@ -30,10 +30,22 @@ endif;
                         labels:<?php echo json_encode($productname); ?>,
                         datasets: [{
                             backgroundColor: [
-                                "#5160e4",
-                               "#5160e4",
-                               "#5160e4",
-                               "#5160e4"
+                                "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80",
+                               "#073d80"
                             ],
                             data:<?php echo json_encode($sales); ?>,
                         }]

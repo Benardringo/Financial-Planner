@@ -6,8 +6,9 @@ $last_name= $_POST['last_name'];
 $password = $_POST['password'];
 $email = $_POST['email'];
 $gender = $_POST['gender'];
+$balance  = 0;
 
-$sql = "INSERT INTO users(first_name, last_name, Email,gender,Password) VALUES ('$first_name', '$last_name', '$email', '$gender', '$password')";
+$sql = "INSERT INTO users(first_name, last_name, Email,gender,Password,balance) VALUES ('$first_name', '$last_name', '$email', '$gender', '$password','$balance')";
 if(mysqli_query($con, $sql)){
     header("Location: signin.html");
 

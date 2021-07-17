@@ -23,11 +23,17 @@ $query=mysqli_query($con,"select * from users where Email='$user' and Password='
 		  echo "<script type='text/javascript'>alert('Invalid email or Password!');
 		  document.location='signin.html'</script>";
 		  } 
+		 
 	  else
 		  {
 
 		$_SESSION['id']=$id;	
 	  	$_SESSION['email']=$name;
+	  	 	if ($_SESSION['id']==1) 
+		  {	
+	    echo "<script type='text/javascript'>document.location='demo.php'</script>";
+
+		  }
 	
 	  		
 	    echo "<script type='text/javascript'>document.location='index.php'</script>";

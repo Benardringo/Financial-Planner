@@ -1,4 +1,14 @@
-    <!--header area end-->
+    <?php
+    include "conn.php";
+
+    session_start();
+    $id=$_SESSION['id'];
+
+    $sql = "SELECT * FROM users where id ='$id'";
+      $result = $con->query($sql);
+      $row = $result->fetch_assoc();
+      ?>
+      <!--header area end-->
     <!--mobile navigation bar start-->
     <div class="mobile_nav">
       <div class="nav_bar">
@@ -10,7 +20,6 @@
         <a href="#"><i class="fas fa-cogs"></i><span>Budget</span></a>
         <a href="statistics.php"><i class="fas fa-table"></i><span>Statistics</span></a>
         <a href="article.php"><i class="fas fa-th"></i><span>Article</span></a>
-        <a href="report.php"><i class="fas fa-info-circle"></i><span>Report</span></a>
         <a href="logout process.php"><i class="fas fa-sliders-h"></i><span>Logout</span></a>
       </div>
     </div>
@@ -18,14 +27,14 @@
     <!--sidebar start-->
     <div class="sidebar">
       <div class="profile_info">
-        <img src="1.png" class="profile_image" alt="">
-        <h4>Ringo 31</h4>
+        <img src="4.png" class="profile_image" alt="">
+        <h4><?php echo $row['Email'] ?></h4>
       </div>
        <a href="index.php"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-        <a href="#"><i class="fas fa-cogs"></i><span>Budget</span></a>
+        <a href="budget.php?id=<?php echo $row['id']; ?>"><i class="fas fa-cogs"></i><span>Budget</span></a>
         <a href="statistics.php"><i class="fas fa-table"></i><span>Statistics</span></a>
         <a href="article.php"><i class="fas fa-th"></i><span>Article</span></a>
-        <a href="report.php"><i class="fas fa-info-circle"></i><span>Report</span></a>
+        <!-- //<a href="report.php"><i class="fas fa-info-circle"></i><span>Report</span></a> -->
         <a href="logout process.php"><i class="fas fa-sliders-h"></i><span>Logout</span></a>
     </div>
     <!--sidebar end-->

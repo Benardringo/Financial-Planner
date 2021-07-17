@@ -7,9 +7,28 @@
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/signin.css" />
     <title>Sign in & Sign up Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Financial planner</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
 <body>
+
+    <div class="scrollToTop-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <header>
+        <a href="index.html" class="brand">Financial Planner</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html">Contact us</a>
+            <a href="index.html">About us</a>
+        </div>
+    </header>
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
@@ -17,11 +36,11 @@
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="email" id="email" placeholder="example@gmail.com" name="email" />
+                        <input type="email" id="email" required placeholder="Email" name="email" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" id="Ppassword" name="password" placeholder="Password" />
+                        <input type="password" id="Ppassword" required name="password" placeholder="Password" />
                     </div>
                     <input type="submit" name="login" value="login" class="btn solid" />
 
@@ -30,15 +49,15 @@
                     <h2 class="title">Sign up</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input id="name" type="text" placeholder="First name" name="first_name" />
+                        <input id="name" type="text" required placeholder="First name" name="first_name" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input id="name" type="text" placeholder="Last name" name="last_name" />
+                        <input id="name" type="text" required placeholder="Last name" name="last_name" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input id="email" type="email" placeholder="Email" name="email" />
+                        <input id="email" type="email" required placeholder="Email" name="email" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
@@ -50,11 +69,11 @@
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" id="password" name="password" placeholder="Password" />
+                        <input type="password" id="password" required name="password" placeholder="Password" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" id="confim_password" placeholder="confim Password" name="confim_Password" />
+                        <input type="password" id="confim_password" required placeholder="confim Password" name="confim_Password" />
                     </div>
 
                     <input type="submit" class="btn" value="Sign up" />
@@ -66,7 +85,7 @@
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="content">
-                    <h3>New here ?</h3>
+                    <!--<h3>New here ?</h3> -->
                     <p>
                         <p>
                             If you dont have an account Register your self here
@@ -77,11 +96,11 @@
               Sign up
             </button>
                 </div>
-                <img src="" class="image" alt="" />
+                <img src="images/" class="image" alt="" />
             </div>
             <div class="panel right-panel">
                 <div class="content">
-                    <h3>One of us ?</h3>
+                    <!-- <h3>One of us ?</h3>-->
                     <p>
                         If you have an account Signin here
                     </p>
@@ -89,7 +108,7 @@
               Sign in
             </button>
                 </div>
-                <img src="" class="image" alt="" />
+                <img src="images/" class="image" alt="" />
             </div>
         </div>
     </div>

@@ -19,21 +19,36 @@ include("fyp/hearder.php");?>
         <p>  </p>
       </div>
       <div class="content1">
-      <?php $x=1; while($x<5):?>
+
+
+      <?php
+      include "fyp/conn.php";
+      $sql = "SELECT * FROM article";
+      $result = $con->query($sql);
+			if ($result->num_rows > 0) {
+				//output data of each row
+				while ($row = $result->fetch_assoc()) {
+		?>
+
         <div class="card reveal">
-          <img src="images/article.jpg" alt="Girl in a jacket" width="330" height="250">
+        <div class="info">
+            <h3><?php echo $row['Article_title']; ?></h3>
+          </div>
+          <a href="viewarticle.php?id=<?php echo $row['Article_id']; ?>" ><img src="images/article.jpg" alt="Girl in a jacket" width="330" height="250"></a>
           <div class="info">
-            <h3> author: massawe</h3>
-            <p>This article contain skills how your can keep your finance growing</p>
+          <p><?php echo $row['short_desc']; ?></p>
           </div>
           </div>
-      <?php $x++; endwhile; ?>
+
+          <?php		}
+			}
+		?>
       </div>
     </section>
 
 
 </div>
-<script src="script.js" charset="utf-8"></script>
+
 <?php include("fyp/script.php");?>
 </body>
 </html>
